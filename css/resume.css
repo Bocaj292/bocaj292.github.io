@@ -1,0 +1,57 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    float: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.link{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+.resume{
+    min-width: 400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h3{
+    font-size: 5em;
+}
+
+.titles{
+    width: 100%;
+    text-align: center;
+}
+
+.img{
+    border: solid black 2px;
+    width: 25%;
+    height: auto;
+}
