@@ -1,6 +1,6 @@
 /* general styles */
 h1{
-    font-size: 50px;
+    font-size: 3.5VW;
 }
 
 p, a{
@@ -10,10 +10,11 @@ p, a{
 
 a{
     color: black;
+    font-size: 2vw;
 }
 
 h2{
-    font-size: 45px;
+    font-size: 4vw;
     margin-left: 50px;
 }
 
@@ -21,6 +22,9 @@ button{
     margin: 40px;
 }
 
+.about p{
+    font-size: 2vw;
+}
 
 
 /* Light mode colors */
@@ -146,5 +150,40 @@ input:checked + .slider:before {
     border-bottom: solid 1px rgb(100, 100, 100);
     width: 100%;
     position: absolute;
-    
+    justify-content: space-around;
 } 
+
+
+/* Ensure the hamburger menu is initially hidden */
+.menu-toggle {
+    display: none;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hide the navigation links by default on small screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Display the hamburger menu icon on small screens */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+
+    /* Style the hamburger menu icon */
+    .menu-toggle .hamburger {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    /* Show the navigation links when the menu toggle is active */
+    .nav.active {
+        display: flex;
+    }
+}
