@@ -14,7 +14,8 @@
             <div class="title">
                 <a href="../index.html"><h2>Jacob Claytor</h2></a>
             </div>
-            <div class="nav">
+            <!-- Inside the header div -->
+            <div class="nav" id="desktop-nav">
                 <a href="html/skills.html">Skills</a>
                 <a href="html/projects.html">Projects</a>
                 <a href="html/experience.html">Experiences</a>
@@ -25,6 +26,21 @@
                     <span class="slider round"></span>
                 </label>
             </div>
+            
+            <!-- Mobile dropdown navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="html/skills.html">Skills</a>
+                        <a href="html/projects.html">Projects</a>
+                        <a href="html/experience.html">Experiences</a>
+                        <a href="html/education.html">Education</a>
+                        <a href="html/resume.html">Resume</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="body">
             <div class="main">
@@ -32,10 +48,10 @@
                     <h1>Jacob Claytor</h1>
                 </div>
                 <div class="about">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente vitae suscipit nobis quas dolore earum aut quasi, quaerat mollitia voluptatum dolores reiciendis consequatur. Labore omnis, consequuntur sequi rem nulla fuga!</p>
+                    <p>I am a full-stack developer proficient in Python, Java, and MERN stack. I graduated from Coding Dojo in 2023, but I found my coding passion in high school. I have built a commitment to clean coding as part of my love to problem-solving. I'm looking to deliver my proven detailed-oriented thoughtful service in a software development context.</p>
                 </div>
             </div>
-            <div class="slide">
+            <div class="slide desktop-only">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -59,11 +75,14 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" id="right">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+            </div>
+            <div class="alt mobile-only">
+                <a href="html/skills.html">All Skills</a>
             </div>
         </div>
     </div>

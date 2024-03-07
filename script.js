@@ -1,3 +1,4 @@
+
 const toggleSwitch = document.getElementById('toggle');
 
 // Function to switch to dark mode
@@ -40,3 +41,5 @@ toggleSwitch.addEventListener('change', toggleDarkMode);
 
 // Apply dark mode on page load
 applyDarkModeOnLoad();
+
+
