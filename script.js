@@ -1,7 +1,3 @@
-document.getElementById('menuToggle').addEventListener('click', function() {
-    document.getElementById('navMenu').classList.toggle('active');
-});
-
 
 const toggleSwitch = document.getElementById('toggle');
 
