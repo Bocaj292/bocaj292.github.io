@@ -1,6 +1,6 @@
 /* general styles */
 h1{
-    font-size: 3.5VW;
+    font-size: 4VW;
 }
 
 p, a{
@@ -178,7 +178,7 @@ input:checked + .slider:before {
     .menu-toggle .hamburger {
         width: 30px;
         height: 3px;
-        background-color: black;
+        background-color: rgb(129, 129, 129);
         margin: 6px 0;
     }
 
