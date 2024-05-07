@@ -38,14 +38,14 @@ img{
         position: relative; /* Add this line */
     } 
 
-/* Styles for desktop */
+/* Styles for mobile */
 @media (max-width: 767px) {
     .desktop-only {
         display: none; /* Hide on mobile */
     }
 }
 
-/* Styles for mobile */
+/* Styles for desktop */
 @media (min-width: 768px) {
     .mobile-only {
         display: none; /* Hide on desktop */

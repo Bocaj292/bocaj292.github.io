@@ -1,6 +1,13 @@
+@media (min-width: 768px) {
+h2{
+    font-size: 25px;
+}
+
+a{
+    font-size: 25px;
+}
 
 /* Styles for mobile */
-@media (min-width: 768px) {
     .mobile-only {
         display: none; /* Hide on desktop */
     }
@@ -16,10 +23,22 @@
 }
 
 @media (max-width: 768px) {
+    .right{
+        display: flex;
+        align-items: center;    
+        flex: 4;
+        justify-content: right;
+    }
+}
+
+@media (max-width: 768px) {
     .title{
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 1;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 
@@ -34,7 +53,6 @@
         position: fixed;
     }
 }
-
 
 /* Styles for mobile devices */
 @media (max-width: 767px) {
@@ -53,6 +71,7 @@
 /* Mobile dropdown navigation - hidden by default */
 #mobile-nav {
     display: none;
+    margin: 0px;
 }
 
 /* Media query for mobile devices */
@@ -65,7 +84,7 @@
     /* Show mobile dropdown navigation */
     #mobile-nav {
         display: block;
-        
+        float: right;
     }
 }
 
@@ -73,7 +92,7 @@
 .dropbtn {
     background-color: gray;
     color: black;
-    padding: 16px;
+    padding: 16px; 
     font-size: 25px;
     border: none;
     cursor: pointer;
