@@ -1,32 +1,5 @@
 
 
-#carouselExample{
-    display: flex;
-    /* flex: 1; */
-    justify-content: center;
-}
-
-.slide{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-
-img{
-    max-width: 100%;
-    width: 40%;
-    height: auto;
-}
-
-
-.carousel-inner {
-    position: relative;
-    display: flex;
-    text-align: center;
-    }
-
-
     .header {
         display: flex;
         border-top: solid 1px rgb(100, 100, 100);
