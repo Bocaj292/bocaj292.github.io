@@ -48,3 +48,9 @@ img{
         }
     }
     
+
+    @media (min-width: 768px) {
+        p{
+            font-size: 50px;
+        }
+    }
