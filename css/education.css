@@ -46,6 +46,7 @@ margin: 25px;
         display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -135,4 +136,10 @@ display: block;
 .desktop-only {
     display: none; /* Hide on mobile */
 }
+=======
+}
+
+img{
+    max-width: 200px;
+>>>>>>> 1ff50478591b60f58850120a0c7676cc612d84d1
 }
