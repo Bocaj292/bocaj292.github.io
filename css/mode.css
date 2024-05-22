@@ -3,20 +3,6 @@ h1{
     font-size: 4VW;
 }
 
-/* p, a{
-    font-size: 25px;
-    text-decoration: none;
-}
-
-a{
-    color: black;
-    font-size: 2vw;
-} */
-
-/* h2{
-    font-size: 4vw;
-    margin-left: 50px;
-} */
 
 button{
     margin: 10px;
@@ -133,6 +119,7 @@ input:checked + .slider:before {
 
 .title{
     flex: 1;
+    font-size: 40px;
 }
 
 /* .header{
