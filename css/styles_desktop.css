@@ -1,35 +1,5 @@
 
 
-<<<<<<< HEAD
-#carouselExample{
-    display: flex;
-    /* flex: 1; */
-    justify-content: center;
-}
-
-.slide{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-
-img{
-    max-width: 100%;
-    width: 40%;
-    height: auto;
-}
-
-
-.carousel-inner {
-    position: relative;
-    display: flex;
-    text-align: center;
-    }
-
-    .main{
-        flex: 2;
-=======
     .header {
         display: flex;
         border-top: solid 1px rgb(100, 100, 100);
@@ -81,10 +51,10 @@ img{
 /* Styles for mobile devices */
 @media (max-width: 767px) {
     .body {
->>>>>>> 1ff50478591b60f58850120a0c7676cc612d84d1
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         margin: 25px;
     }
+}
