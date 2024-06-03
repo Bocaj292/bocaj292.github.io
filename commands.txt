@@ -2,6 +2,8 @@ GitHub Push Command
 
 git remote add origin (repo name)
 git branch -M main
+git add . 
+git commit -m "message"
 git push -u origin main
 
 git remote add origin https://github.com/Bocaj292/bocaj292.github.io.git
