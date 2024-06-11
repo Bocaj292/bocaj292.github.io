@@ -56,11 +56,21 @@ margin: 25px;
 
 .workex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 25px;
+    flex-direction: column;
 }
 
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.work{
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 img{
     max-width: 200px;
