@@ -13,7 +13,7 @@ button{
 }
 
 .header {
-    background-color: rgb(119, 119, 119); /* Light mode header color */
+    background-color: rgb(255, 255, 255); /* Light mode header color */
 }
 
 body.dark-mode .header {
@@ -23,13 +23,13 @@ body.dark-mode .header {
 
 /* Light mode colors */
 body {
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding-top: 80px;
 }
 
 h1, a{
-    color: rgb(11, 75, 159);
+    color: rgb(0, 0, 0);
 }
 
 body.light-mode button,
@@ -41,7 +41,7 @@ body.light-mode a {
 
 /* Dark mode colors */
 body.dark-mode {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
