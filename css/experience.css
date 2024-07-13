@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     border-top: solid 1px rgb(100, 100, 100);
     border-bottom: solid 1px rgb(100, 100, 100);
@@ -6,14 +6,14 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    position: relative; /* Add this line */
+    position: relative;
 } 
 
 
-/* Styles for desktop */
+
 @media (min-width: 768px) {
 .mobile-only {
-    display: none; /* Hide on desktop */
+    display: none;
 }
 }
 
@@ -35,14 +35,13 @@ margin: 25px;
         width: 100%;
         height: 100%;
         padding-top: 100px;
-        position: fixed;
     }
 }
 
 
-/* Styles for mobile devices */
+
     .body {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -57,6 +56,7 @@ margin: 25px;
 .workex{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .top{
@@ -68,10 +68,219 @@ margin: 25px;
     justify-content: space-around;
 }
 .work{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 25px;
+    flex: 1;
 }
 
 img{
     max-width: 200px;
+}
+
+body {
+    min-height: 100vh;
+    overflow: auto;
+    margin: 0; 
+}
+
+.dates p{
+    font-size: 40px;
+} */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode Colors */
+body.light-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body.light-mode button,
+body.light-mode a {
+    color: rgb(0, 0, 0);
+}
+
+h1, a {
+    color: rgb(0, 0, 0);
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode .header {
+    background-color: rgb(0, 0, 0); /* Dark mode header color */
+}
+
+body.dark-mode button,
+body.dark-mode a, 
+body.dark-mode h1 {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode h1 {
+    color: white;
+}
+
+/* Container Styles */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.header .title h2 {
+    margin: 0;
+}
+
+/* Body Content */
+.body {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Body Content */
+body.dark-mode .body {
+    background-color: #333;
+}
+
+/* Education Section */
+.edu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edu .dates p, .edu .edulist ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.edu img {
+    max-width: 100px;
+}
+
+/* Work Experience Section */
+.workex .top, .workex .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.workex .work {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    width: 48%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .workex .work {
+    background-color: #555;
+}
+
+.workex .role h3 {
+    margin-top: 0;
+}
+
+.workex .duty ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edu, .workex .top, .workex .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu img {
+        margin: 10px 0;
+    }
+
+    .workex .work {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

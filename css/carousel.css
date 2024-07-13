@@ -1,8 +1,5 @@
-
-
 #carouselExample{
     display: flex;
-    /* flex: 1; */
     justify-content: center;
 }
 
@@ -19,9 +16,6 @@ img{
     height: auto;
 }
 
-/* .name.light-mode{
-    color: rgb(204, 0, 255);
-} */
 
 
 .carousel-inner {
